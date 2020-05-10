@@ -1,9 +1,7 @@
-/* Page Styling */
 body {
   margin: 25px;
 }
 
-/* Graph Styling */
 .bar {
   fill: steelblue;
 }
@@ -31,7 +29,8 @@ div.tooltip {
   border-radius: 6px;
 }
 
-svg, g {
+svg,
+g {
   position: relative;
 }
 
@@ -62,6 +61,7 @@ div.tooltip:before {
   border-width: 10px;
   margin-left: -10px;
 }
+
 .line {
   fill: none;
   stroke: #ffab00;
