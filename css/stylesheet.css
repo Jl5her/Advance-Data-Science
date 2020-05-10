@@ -1,0 +1,74 @@
+/* Page Styling */
+body {
+  margin: 25px;
+}
+
+/* Graph Styling */
+.bar {
+  fill: steelblue;
+}
+
+.ui.menu {
+  margin: 1em;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: left;
+  padding: 5px;
+  font: 12px sans-serif;
+  border: 0px;
+  border-radius: 0px;
+  pointer-events: none;
+  color: black;
+  background: white;
+  border: 2px solid black;
+  transform: translateX(-50%) translateY(-100%);
+  border-radius: 6px;
+}
+
+svg, g {
+  position: relative;
+}
+
+line {
+  stroke: #CCC;
+}
+
+div.tooltip:before,
+div.tooltip:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+div.tooltip:after {
+  border-top-color: white;
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+div.tooltip:before {
+  border-top-color: black;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 3;
+}
+
+.dot {
+  fill: #ffab00;
+  stroke: #fff;
+}
