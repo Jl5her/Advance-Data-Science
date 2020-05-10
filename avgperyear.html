@@ -1,6 +1,7 @@
 <title>Average Score Per Year</title>
 
-<meta id="page" value="avgperyear"></meta>
+<meta id="page" value="avgperyear">
+</meta>
 
 <head>
   <title>AP Computer Science Visualizations</title>
@@ -8,7 +9,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/components/slider.min.js"></script>
@@ -20,9 +20,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js'></script>
   <link rel='stylesheet' type='text/css'
     href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css'>
-  <script src="js/graphs.js?<?php echo date('l jS \of F Y h:i:s A');?>"></script>
-  <script src="js/app.js?<?php echo date('l jS \of F Y h:i:s A');?>"></script>
-  <link rel='stylesheet' type='text/css' href='css/stylesheet.css?<?php echo date('l jS \of F Y h:i:s A');?>'>
+  <script src="js/graphs.js"></script>
+  <script src="js/app.js"></script>
+  <link rel='stylesheet' type='text/css' href='css/stylesheet.css>'>
 </head>
 
 <h3>AP CS - Wisconsin Region</h3>
@@ -153,7 +153,7 @@
     var line = d3.line()
       .x(function (d) {
         return x(d.year) + (x.bandwidth() / 2)
-      }) 
+      })
       .y(function (d) {
         return yScale(d.avg);
       })
